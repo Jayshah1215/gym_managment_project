@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>The Gym | Contact</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <!-- Font family --> 
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="style3.css">
+      <link rel="stylesheet" type="text/css" href="animated.css"> 
+      <style>
+        .fa1{
+            font-size:13px;
+            padding: 15px;
+            color:white;
+            background-color: #fd3c3d;
+            border-radius: 50%;
+            text-align: center;
+            }
+            .fa2{
+            font-size:40px;
+            }
+            .fas{
+              font-size: 20px;
+              padding: 10px;
+            }
+        #topbtn{
+          position: fixed;
+          bottom: 40px;
+          right: 40px;
+          font-size: 50px;
+          display: none;
+          color:#fd3c3d;
+          background-color: black;
+          border-radius: 10%;
+          }
+          .bg1{
+            background-image: url('contact.jpg');
+            width: 100%;
+            height:400px;
+            background-size:100% 100%;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position: center center;               
+            } 
+      </style>         
+  </head>
+  <body>
+      
+    <!---------------------Main Poster Img------------------------->
+          <div class="container-fluid bg1"> 
+            <div class="container text-center py-5">
+              <h1 class="py-5 text-light p-5"></h1>
+            </div>
+          </div>
+       			<div class="container py-5">
+               		<div class="row">
+                    <div class="col-sm-6">
+                      <h1 class="py-5">Address</h1>
+                      <div class="row">
+                        <div class="col-sm-1">
+                          <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="col-sm-11">
+                          <ul style="list-style: none;">
+                            <li class="font-weight-bold"><i>Location</i></li>
+                            <li>B-48/108,Naranpura</li>
+                            <li>Near Shivalik Complex</li>
+                            <li>Ahmedabad-13</li>
+                          </ul>
+                       </div>
+                       <div class="col-sm-1">
+                          <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <div class="col-sm-11">
+                          <ul style="list-style: none;">
+                            <li>+91.11.45535888</li>
+                          </ul>
+                       </div>
+                       <div class="col-sm-1">
+                          <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="col-sm-11">
+                          <ul style="list-style: none;">
+                            <li>+91.9811594828</li>
+                          </ul>
+                       </div>
+                       <div class="col-sm-1">
+                          <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="col-sm-11">
+                          <ul style="list-style: none;">
+                            <li>info@thegym.in</li>
+                          </ul>
+                       </div>
+                       <div class="col-sm-1">
+                          <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="col-sm-11">
+                          <ul style="list-style: none;">
+                            <li>www.thegym.in</li>
+                          </ul>
+                       </div>
+                        </div>
+                    </div>
+               			<div class="col-sm-6">
+                      <h1 class="py-5">Contact Us</h1>
+               				<form id="my_form" method="POST" onsubmit="submitForm(); return false;">
+					    		<div class="row">
+					     			<div class="form-group col-lg-6">
+					      				<label for="Name">Name:</label>
+					      					<input id="n" class="form-control" name="name"  type="text" required 
+					                          autocomplete="off" style="border-radius:0;font-size: 14px;">
+					                        </div>
+	
+    								<div class="form-group col-lg-6">
+      									<label for="email">Email :</label>
+                                          <input id="e" class="form-control" name="email"  type="email" required 
+                          						autocomplete="off" style="border-radius:0;font-size: 14px;">									</div>
+								</div>
+								<div class="row">
+    								<div class="form-group col-lg-12">
+      									<label for="email">Subject:</label>
+                          					<input id="e" class="form-control" name="subject"  type="text" required 
+                          						autocomplete="off" style="border-radius:0;font-size: 14px;">
+									</div>
+								</div>
+								<div class="row">
+								    <div class="form-group col-lg-12">
+								      <label for="pwd">Message:</label>
+								       <textarea id="m" class="form-control" name="message" rows="7" required 
+								                         autocomplete="off" style="border-radius:0;font-size: 14px;"></textarea>
+								    </div>
+								</div>
+								<div class="row">
+								    <div class="form-group col-sm-12">
+								               <div id="recaptcha" class="g-recaptcha" data-sitekey="6LenA5gUAAAAAAkL3pxLcWKp6ZWY6qB4_YJQGNcG"></div>
+								         					<span class="msg-error error"></span>
+								                        </div>
+								                    </div>
+								                        <div class="row float-right">
+								                        <div class="form-group col-sm-12">
+								                          <button id="mybtn" type="submit" formmethod="POST" name="submit" class="btn btn-dark"style="width:100%;">Submit</button>
+								                          <span id="status"></span>
+								                       </div> 
+								                   </div>
+								</form>
+               		
+               				</div>
+           			</div>
+               </div>
+                <!----------------------Footer----------------------------->
+                <div class="container-fluid  text-light py-5"style="background-color: black;">
+                   <div class="container">
+                    
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                            <a href="" class="fa fa-facebook px-3 text-danger fa2"></a>
+                            <a href="#" class="fa fa-twitter px-3 text-danger fa2"></a>
+                            <a href="#" class="fa fa-linkedin px-3 text-danger fa2"></a>
+                            <a href="https://instagram.com/jay_shah1205?igshid=OTJhZDVkZWE=" class="fa fa-instagram px-3 text-danger fa2"></a><br><br>
+                            <span style="font-size: 12px;">The Gym &copy; 2019 Tucson Fitness Pvt. Ltd.</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+  </body>
+  </html>
+<?php
+// Check if the form has been submitted
+/*if (isset($_POST['submit'])) {
+    
+    // Get the form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+
+$conn= new mysqli('localhost','root','','profile_db')or die("Could not connect to mysql".mysqli_error($con));
+
+
+    $sql = "insert into feedback_form values($name,$email,$subject,$message)";
+
+    if(mysqli_query($conn,$sql)){
+        echo "Data inserted";
+    }
+    
+}*/
+
+if (isset($_POST['submit'])) {
+    $con=mysqli_connect("localhost","root","","feedback");
+    $sql = "insert into fed_det values(' $_POST[name]',' $_POST[email]',' $_POST[subject]',' $_POST[message]')";
+    $query=mysqli_query($con,$sql);
+    }
+?>
